@@ -205,6 +205,7 @@ li {
 *  Login Page
 *
 ***************************/
+
 .login-page {
   height: 100%;
 }
@@ -265,6 +266,15 @@ li {
   box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 35px -5px;
   margin-left: 5%;
   background: transparent;
+ 	margin:auto;
+	height:340px!important;
+	min-height:340px!important;
+	left:0;
+	right:0;
+	bottom:0;
+	margin-left:auto!important;
+	border-radius:15px;
+	width:350px!important;
 }
 .login-page .login-container .login-form {
   display: flex;
@@ -275,17 +285,19 @@ li {
   top: 0px;
   width: 100%;
   min-height: 100%;
-  max-width: 420px;
+  max-width: 420px;  
+  
   background-color: #fff;
   background-color: var(--white);
+	border-radius:15px;
 }
 .login-page .login-container .login-form .brand {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  margin: 50px auto 100px 50px;
   color: #525461;
   color: var(--default);
+  margin:15px auto!important;
 }
 .login-page .login-container .login-form .brand .icon {
   width: 50px;
@@ -302,16 +314,17 @@ li {
 }
 .login-page .login-container .login-form .form-login {
   width: 100%;
-  padding: 20px 50px;
   box-sizing: border-box;
+ 	padding:10px 50px!important;
 }
 .login-page .login-container .login-form .form-login .errorbox {
   text-align: center;
   color: #fb6340;
   color: var(--warning);
+ 	padding:10px!important;
 }
 .login-page .login-container .login-form .form-login .input-group {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 .login-page .login-container .login-form .form-login .input-group::before {
@@ -360,6 +373,7 @@ li {
   background-clip: padding-box;
   box-shadow: 0 3px 2px rgba(233, 236, 239, 0.05);
   outline: none;
+  margin-bottom:0!important;
 }
 .login-page .login-container .login-form .form-login .input-group input:focus + .border {
   transform: scaleX(1);
@@ -394,9 +408,9 @@ li {
   border-color: initial;
   border-image: initial;
   padding: 10px 0px;
-  margin: 30px 0px 100px;
   transition: all 0.3s !important;
   letter-spacing: 0.8rem;
+  margin:25px auto!important;
 }
 .login-page .login-container .login-form .cbi-button-apply:hover,
 .login-page .login-container .login-form .cbi-button-apply :focus {
@@ -419,7 +433,7 @@ li {
 }
 .login-page .login-container footer .ftc {
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   width: 100%;
 }
 .login-page .login-container footer .luci-link {
@@ -438,6 +452,7 @@ li {
     background-color: rgba(244, 245, 247, var(--blur-opacity));
   }
 }
+
 /***********************
 *
 *  Header
@@ -2889,7 +2904,7 @@ input[name="nslookup"] {
     height: 100% !important;
   }
   .login-page .login-container {
-    margin-left: 0rem !important;
+    margin-left: auto !important;
     width: 100%;
   }
   .login-page .login-container .login-form {
